@@ -12,26 +12,19 @@ public class LinkData {
 	    private Long id;
 	     
 	    @Persistent
-	    private String maisuu;
+	    private String title;
 	     
+	   
 	    @Persistent
-	    private String maisuu1;
-	     
-	    @Persistent
-	    private String maisuu2;
-	    
-	    @Persistent
-	    private String maisuu3;
+	    private String comment;
 	     
 	    @Persistent
 	    private Date datetime;
 	 
-	    public LinkData(String maisuu, String maisuu1, String maisuu2, String maisuu3, Date datetime) {
+	    public LinkData(String title, String comment,Date datetime) {
 	        super();
-	        this.maisuu = maisuu;
-	        this.maisuu1 = maisuu1;
-	        this.maisuu2 = maisuu2;
-	        this.maisuu3 = maisuu3;
+	        this.title = title;
+	        this.comment = comment;
 	        
 	        this.datetime = datetime;
 	    }
@@ -46,33 +39,19 @@ public class LinkData {
 	    }
 	 
 	    public String getTitle() {
-	        return maisuu;
+	        return title;
 	    }
 	 
 	    public void setTitle(String title) {
-	        this.maisuu = title;
+	        this.title= title;
 	    }
-	    public String getTitle1() {
-	        return maisuu1;
-	    }
-	 
-	    public void setTitle1(String title) {
-	        this.maisuu1 = title;
+	    
+	    public String getComment() {
+	        return comment;
 	    }
 	 
-	    public String getTitle2() {
-	        return maisuu2;
-	    }
-	 
-	    public void setTitle2(String title) {
-	        this.maisuu2 = title;
-	    }
-	    public String getTitle3() {
-	        return maisuu3;
-	    }
-	 
-	    public void setTitle3(String title) {
-	        this.maisuu3= title;
+	    public void setComment(String title) {
+	        this.comment= comment;
 	    }
 	   
 	 
